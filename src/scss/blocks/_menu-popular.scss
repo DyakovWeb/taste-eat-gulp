@@ -1,0 +1,32 @@
+.menu-popular {
+   padding-bottom: 140px;
+   background-color: #fff;
+}
+
+.menu-popular__content {
+   margin-bottom: 50px;
+
+   @include mediaMobile {
+      margin-bottom: 30px;
+
+      .text br {
+         display: none;
+      }
+   }
+}
+
+.menu-popular__cards {
+   margin-bottom: 65px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
+   justify-items: center;
+   gap: 30px;
+
+   & > *:first-child .card-popular-dish__title {
+      font-weight: 700;
+   }
+}
+
+.menu-popular__button {
+   text-align: center;
+}

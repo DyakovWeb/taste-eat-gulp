@@ -1,0 +1,30 @@
+[
+   {
+      "image": "card-1.jpg",
+      "alt": "Chicken Manjoori",
+      "title": "Chicken Manjoori",
+      "price": 15,
+      "description": "Dish relished by all age groups as a starter dish at parties."
+   },
+   {
+      "image": "card-2.jpg",
+      "alt": "Hotdog",
+      "title": "Hotdog",
+      "price": 10,
+      "description": "Grilled sausage served in the slit of a partially sliced bun."
+   },
+   {
+      "image": "card-3.jpg",
+      "alt": "Fresh Salmon",
+      "title": "Fresh Salmon",
+      "price": 5,
+      "description": "Beat the health blues with our Super Immune Blue Juice Recipe."
+   },
+   {
+      "image": "card-4.jpg",
+      "alt": "Veg Burger",
+      "title": "Veg Burger",
+      "price": 10,
+      "description": "Burgers may be made from ingredients like beans."
+   }
+]

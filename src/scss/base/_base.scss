@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Josefin+Sans&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+   font-family: var(--font-main);
+	line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+	font-size: var(--font-size);
+}
+
+.title-1, .title-2, .title-3, .title-4 {
+	font-family: var(--font-accent);
+	color: var(--text-title);
+}
+
+.title-1 {
+	font-size: 100px;
+	line-height: 1.1;
+	color: var(--text-white);
+
+	@include mediaLaptop {
+		font-size: 70px;
+	}
+
+	@include mediaMobile {
+		font-size: 50px;
+	}
+}
+
+.title-2 {
+	font-size: 40px;
+	line-height: 1.4;
+
+	@include mediaMobile {
+		font-size: 36px;
+	}
+}
+
+.title-3 {
+	font-size: 36px;
+	line-height: 1.4;
+}
+
+.title-4 {
+	font-size: 30px;
+	line-height: 1.3;
+
+	@include mediaMobile {
+		font-size: 26px;
+	}
+
+	@include mediaMobileS {
+		font-size: 22px;
+	}
+}
+
+.small-title {
+	padding-top: 4px;
+	display: inline-block;
+	height: 27px;
+	border-top: 1px solid var(--accent);
+	border-bottom: 1px solid var(--accent);
+	color: var(--text-title);
+	font-size: 15px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	&--dark {
+		border-top: 1px solid #292E36;
+		border-bottom: 1px solid #292E36;
+	}
+
+	&--white {
+		color: var(--text-white);
+	}
+
+	&--big {
+		padding-top: 7px;
+		height: 30px;
+	}
+}
+
+.text {
+	color: var(--text-white);
+
+	&--muted {
+		color: var(--text-color);
+	}
+
+	@include mediaLaptop {
+		font-size: 18px;
+	}
+
+	@include mediaMobile {
+		font-size: 16px;
+	}
+}
+
+.hashtag {
+	font-size: 22px;
+	color: var(--text-white)
+}
+
+.links {
+	a {
+		transition: opacity 0.2s ease-in;
+		&:hover {
+			opacity: 0.8;
+		}	
+	}
+}
+
+.content-header {
+	text-align: center;
+
+	.small-title {
+      margin-bottom: 12px;
+   }
+
+   .title-2 {
+      margin-bottom: 8px;
+      text-transform: capitalize;
+   }
+}
+
+.svg-logo {
+	width: 378px;
+	height: 188px;
+}
+
+.svg-insta, .svg-facebook {
+	width: 24px;
+	height: 23px;
+}
+
+.svg-twitter {
+	width: 26px;
+	height: 21px;
+}
+
+.svg-p-social {
+	width: 25px;
+	height: 24px;
+}
+
+.svg-signature {
+	width: 200px;
+	height: 111px;
+	fill: #292E36;
+}
+
+.svg-offers-price-1 {
+	width: 167px;
+	height: 104px;
+}
+
+.svg-offers-price-2 {
+	width: 166px;
+	height: 104px;
+}
+
+.button {
+	padding: 0 57px;
+	height: 73px;
+	line-height: 73px;
+	border: 2px solid var(--accent);
+	white-space: nowrap;
+	text-align: center;
+	font-size: 22px;
+	color: var(--text-white);
+	transition: background-color 0.2s ease-in, color 0.2s ease-in, filter 0.2s ease-in;
+
+	&:hover {
+		background-color: var(--accent);
+		color: var(--text-white);
+	}
+	
+	&:active {
+		filter: drop-shadow(16px 16px 20px var(--accent));
+	}
+}
+
+.button-big {
+	padding: 0 85px;
+	height: 73px;
+	line-height: 73px;
+	border: 2px solid var(--accent);
+	white-space: nowrap;
+	text-align: center;
+	font-size: 22px;
+	letter-spacing: 0.44px;
+	background-color: var(--accent);
+	color: #292E36;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+	&:hover {
+		background-color: transparent;
+		color: var(--text-white);
+	}
+}
+
+.button-subscribe {
+	padding: 0 56px;
+	height: 68px;
+	line-height: 68px;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 22px;
+	color: #000;
+	background-color: #fff;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+	&:hover {
+		background-color: var(--accent);
+		color: var(--text-white);
+	}
+}
+
+.social-links {
+	padding: 4px 10px 2px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	a {
+		transition: opacity 0.2s ease-in;
+	}
+	
+	& > *:hover {
+		opacity: 0.8;
+	}
+}
+
+.active {
+	color: var(--accent);
+}

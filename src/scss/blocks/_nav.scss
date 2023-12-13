@@ -1,0 +1,25 @@
+.nav {
+   padding: 20px 0;
+}
+.nav__list {
+   display: flex;
+   a {
+      color: var(--text-white);
+      transition: color 0.2s ease-in;
+      &.active {
+         color: var(--accent);
+      }
+
+      &:hover {
+         color: var(--accent);
+      }
+   }
+
+   li + li {
+      margin-left: 60px;
+   }
+
+   & > *:nth-child(5) {
+      margin-left: 85px;
+   }
+}

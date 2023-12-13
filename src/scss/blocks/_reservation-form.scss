@@ -1,0 +1,67 @@
+.reservation-form {
+   display: grid;
+   gap: 30px;
+   
+   input {
+      width: 100%;
+      padding: 0 25px;
+      height: 70px;
+      border: 1px solid #858585;
+      font-size: 22px;
+
+      &::placeholder {
+         color: var(--text-white);
+      }
+
+      &:focus {
+         background-color: rgba(133, 133, 133, 0.2);
+      }
+   }
+}
+
+.reservation-form__row-1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 26px;
+}
+
+.reservation-form__row-2 {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 23px;
+}
+
+.reservation-form__row-1, .reservation-form__row-2 {
+   @include mediaTablet {
+      grid-template-columns: 1fr;
+   }
+}
+
+.reservation-form__button {
+   padding: 0 54px;
+   height: 68px;
+   line-height: 68px;
+   justify-self: center;
+   white-space: nowrap;
+   font-size: 22px;
+   background-color: #fff;
+   color: #000;
+   transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+   &:hover {
+      background-color: var(--accent);
+      color: var(--text-white)
+   }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

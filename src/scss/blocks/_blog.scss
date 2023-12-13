@@ -1,0 +1,38 @@
+.blog {
+   padding: 140px 0 150px;
+   background-color: #fff;
+
+   .container {
+      max-width: 1360px;
+   }
+
+   @include mediaLaptop {
+      padding: 90px 0 100px;
+   }
+
+   @include mediaTablet {
+      padding: 60px 0 70px;
+   }
+}
+
+.blog__content {
+   margin-bottom: 40px;
+
+   @include mediaMobileS {
+      br {
+         display: none;
+      }
+   }
+}
+
+.blog__cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 50px;
+
+   @include mediaTablet {
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+}
+

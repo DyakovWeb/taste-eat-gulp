@@ -1,0 +1,23 @@
+.card-popular-dish {
+   max-width: 317px;
+}
+
+.card-popular-dish__image {
+   img {
+      width: 318px;
+      height: 307px;
+      object-fit: cover;
+   }
+}
+.card-popular-dish__title {
+   padding: 9px 0 11px;
+   margin-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #DCDCDC;
+
+   font-family: var(--font-accent);
+   font-size: 30px;
+   line-height: 1.4;
+   color: var(--text-title);
+}

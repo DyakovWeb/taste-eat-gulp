@@ -1,0 +1,14 @@
+<section class="blog" id="blog">
+   <div class="container">
+      <div class="content-header blog__content">
+         <div class="small-title">blog</div>
+         <h2 class="title-2">Be First Who Read News</h2>
+         <div class="text text--muted">
+            <p>Explore the latest stories about our dishes, offers, <br> events and future plans here.</p>
+         </div>
+      </div>
+      <div class="blog__cards">
+         @@loop('./templates/blog-card.html', './blocks/data/blog-card.json')
+      </div>
+   </div>
+</section>

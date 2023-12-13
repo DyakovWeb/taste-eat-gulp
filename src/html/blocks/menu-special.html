@@ -1,0 +1,49 @@
+<section class="menu-special" id="menu-special">
+   <div class="container">
+      <div class="menu-special__row">
+
+         <div class="menu-special__description">
+            <div class="small-title">
+               menu
+            </div>
+            <h2 class="title-2">Try Our Special Dishes</h2>
+            <div class="text text--muted">
+               <p>Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.</p>
+            </div>
+            <img src="./img/menu/dishes.jpg" alt="Dishes">
+            <a href="#!" class="button active">See all dishes</a>
+         </div>
+
+         <div class="menu-special__list">
+
+            <div class="menu-special__list-testimonials">
+               <div class="menu-special__list-title">
+                  <h3 class="title-3">Starters</h3>
+               </div>
+               <div class="menu-special__list-item">
+                  @@loop('./templates/card-food.html', './blocks/data/card-food-starters.json')
+               </div>
+            </div>
+
+            <div class="menu-special__list-testimonials">
+               <div class="menu-special__list-title">
+                  <h3 class="title-3">Main Dish</h3>
+               </div>
+               <div class="menu-special__list-item">
+                  @@loop('./templates/card-food.html', './blocks/data/card-food-dish.json')
+               </div>
+            </div>
+
+            <div class="menu-special__list-testimonials">
+               <div class="menu-special__list-title">
+                  <h3 class="title-3">Dessert</h3>
+               </div>
+               <div class="menu-special__list-item">
+                  @@loop('./templates/card-food.html', './blocks/data/card-food-dessert.json')
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</section>

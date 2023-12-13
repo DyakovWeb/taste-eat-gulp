@@ -1,0 +1,23 @@
+.swiper {
+   height: 100%;
+
+   @include mediaTablet {
+      max-height: 380px;
+   }
+}
+
+.swiper-slide {
+   width: 100% !important;
+   max-width: 544px !important;
+}
+
+.swiper-pagination {
+   left: 50% !important;
+   transform: translateX(-50%) !important;
+   --swiper-pagination-bottom: 0;
+   --swiper-pagination-color: #fff;
+   --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.40);
+   --swiper-pagination-bullet-inactive-opacity: 1;
+   --swiper-pagination-bullet-width: 20px;
+   --swiper-pagination-bullet-height: 20px;
+}

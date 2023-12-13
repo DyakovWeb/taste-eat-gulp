@@ -1,0 +1,24 @@
+[
+   {
+      "priceText": "only",
+      "price": 10,
+      "svgImage":"svg-offers-price-1",
+      "smallTitle": "50% Offer Going",
+      "title": "Chicken Burger",
+      "text": "Chicken burger with the tasty toppings and leaves.",
+      "image":"offers-1-image.png",
+      "imageBg":"offers-1-bg.jpg",
+      "alt":"Burger" 
+   },
+   {
+      "priceText": "only",
+      "price": 9,
+      "svgImage":"svg-offers-price-2",
+      "smallTitle": "50% Offer Going",
+      "title": "Chicken Pizza",
+      "text": "Pizza with multiple flavor and the toping are mixed.",
+      "image":"offers-2-image.png",
+      "imageBg":"offers-2-bg.jpg",
+      "alt":"Pizza" 
+   }
+]

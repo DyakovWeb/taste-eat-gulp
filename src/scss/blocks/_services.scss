@@ -1,0 +1,73 @@
+.services {
+   padding: 140px 0;
+
+   @include mediaLaptop {
+      padding: 70px 0;
+   }
+
+   @include mediaMobile {
+      padding: 50px 0;
+   }
+}
+
+.services__row {
+   display: grid;
+   grid-template-columns: 448px 1fr;
+   gap: 90px;
+   
+   .content-header {
+      text-align: left;
+
+      .title-2 {
+         margin-bottom: 13px;
+         color: var(--text-white);
+      }
+   }
+
+   @include mediaLaptop {
+      gap: 30px;
+   }
+
+   @include mediaLaptopS {
+      gap: 20px;
+   }
+
+   @include mediaTablet {
+      grid-template-columns: 1fr;
+   }
+}
+
+
+.services__cards {
+   display: grid;
+   gap: 30px;
+   grid-template-columns: repeat(3, 1fr);
+
+   @include mediaLaptop {
+      grid-template-columns: repeat(auto-fit, minmax(254px, 1fr));
+   }
+
+   @include mediaLaptopS {
+      gap: 15px;
+   }
+
+   @include mediaMobile {
+      grid-template-columns: 1fr;
+   }
+
+}
+
+.services-card {
+   padding: 45px 0 40px;
+   display: grid;
+   justify-items: center;
+   gap: 15px;
+   border: 20px solid #323841;
+}
+
+.services-card__title {
+   color: #FFF;
+   font-family: var(--font-accent);
+   font-size: 25px;
+   line-height: 1.4;
+}

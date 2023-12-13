@@ -1,0 +1,17 @@
+<section class="menu-popular">
+   <div class="container">
+      <div class="content-header menu-popular__content">
+         <div class="small-title">menu</div>
+         <h2 class="title-2">Popular Dishes</h2>
+         <div class="text text--muted">
+            <p>There is a game between the waiters in restaurant to see who serves the food to <br> each table fastest. That led to attempting the Guinness Record.</p>
+         </div>
+      </div>
+      <div class="menu-popular__cards">
+         @@loop('./templates/card-popular-dish.html', './blocks/data/card-popular-dish.json')
+      </div>
+      <div class="menu-popular__button">
+         <button class="button active">See all dishes</button>
+      </div>
+   </div>
+</section>

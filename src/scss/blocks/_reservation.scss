@@ -1,0 +1,35 @@
+.reservation {
+   padding: 140px 0;
+   height: 977px;
+   background-image: url('./../img/reservation/bg.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: var(--text-white);
+
+   @include mediaTablet {
+      padding: 70px 0;
+   }
+
+   @include mediaMobile {
+      height: 100%;
+   }
+}
+
+.reservation__form {
+   padding: 140px 140px 155px;
+   margin: 0 auto;
+   max-width: 920px;
+   background-color: rgba(41, 46, 54, 0.95);
+
+   @include mediaTablet {
+      padding: 60px 30px 75px;
+   }
+}
+
+.reservation__title {
+   margin-bottom: 38px;
+
+   .title-2 {
+      color: var(--text-white);
+   }
+}
