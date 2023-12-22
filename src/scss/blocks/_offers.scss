@@ -9,6 +9,12 @@
 
 .offers__content {
    margin-bottom: 40px;
+
+   @include mediaMobile {
+      br {
+         display: none;
+      }
+   }
 }
 
 .offers__cards {

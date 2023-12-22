@@ -71,14 +71,9 @@
 
 .menu-special__list-testimonials {
    padding-bottom: 60px;
-   max-height: 635px;
 
    @include mediaLaptopS {
       padding-bottom: 40px;
-   }
-
-   @include mediaMobile {
-      max-height: unset;
    }
 }
 
